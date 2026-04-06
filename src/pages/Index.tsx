@@ -4,7 +4,7 @@ import { ArrowRight, Camera, Film, Smartphone, Share2 } from "lucide-react";
 import Layout from "@/components/Layout";
 import Section from "@/components/Section";
 import heroBg from "@/assets/hero-bg.jpg";
-import marcosImg from "@/assets/marcos-adonai.jpg";
+import marcosImg from "/images/Mídia - Copia.jpg";
 
 const services = [
   { icon: Film, title: "Storymaker", desc: "Histórias visuais que conectam e engajam seu público." },
@@ -106,14 +106,14 @@ const Index = () => {
             transformação, é o combustível para continuar fazendo a diferença."
           </blockquote>
           <div className="flex items-center justify-center gap-4">
-            <img
-              src={marcosImg}
-              alt="Marcos Adonai"
-              className="w-12 h-12 rounded-full object-cover"
-              loading="lazy"
-              width={48}
-              height={48}
-            />
+            <div className="w-12 h-12 rounded-full overflow-hidden">
+              <img
+                src={marcosImg}
+                alt="Marcos Adonai"
+                className="w-full h-full object-cover scale-110"
+                loading="lazy"
+              />
+            </div>
             <div className="text-left">
               <p className="text-sm font-semibold">Marcos Adonai</p>
               <p className="text-xs text-muted-foreground">CEO & Fundador</p>

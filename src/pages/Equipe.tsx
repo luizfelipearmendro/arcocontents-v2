@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import Section from "@/components/Section";
-import marcosImg from "@/assets/marcos-adonai.jpg";
+import marcosImg from "/images/Mídia.jpg";
+import teamBg from "@/assets/about-bg.jpg";
 import { Instagram, Linkedin } from "lucide-react";
 
 const team = [
@@ -11,7 +12,7 @@ const team = [
     image: marcosImg,
     bio: "Fundador da Arco Contents, apaixonado por storytelling e marketing de conteúdo. Lidera a equipe com visão estratégica e criatividade.",
     social: {
-      instagram: "https://instagram.com/arcocontents",
+      instagram: "https://www.instagram.com/marcosvasconcelox/",
       linkedin: "#",
     },
   },
@@ -21,8 +22,12 @@ const Equipe = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="pt-32 pb-16 bg-gradient-dark">
-        <div className="container mx-auto px-6">
+      <section className="relative h-[60vh] min-h-[400px] flex items-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={teamBg} alt="Equipe Arco Contents" className="w-full h-full object-cover" width={1920} height={900} />
+          <div className="absolute inset-0 bg-warm-overlay" />
+        </div>
+        <div className="relative z-10 container mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="text-primary text-sm uppercase tracking-[0.3em] mb-4">Nossa equipe</p>
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">Quem faz acontecer</h1>

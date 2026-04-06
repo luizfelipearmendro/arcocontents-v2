@@ -50,20 +50,20 @@ const Footer = () => {
                 (66) 99630-6201
               </a>
               <a
-                href="mailto:contato@arcocontents.com"
+                href="mailto:arcocontents@gmail.com"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
               >
                 <Mail size={14} />
-                contato@arcocontents.com
+                arcocontents@gmail.com
               </a>
               <a
-                href="https://instagram.com/arcocontents"
+                href="https://www.instagram.com/arco_contents/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
               >
                 <Instagram size={14} />
-                @arcocontents
+                @arco_contents
               </a>
             </div>
           </div>

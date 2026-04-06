@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import Section from "@/components/Section";
 import { Film, Camera, Smartphone, Share2, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import servicesBg from "@/assets/hero-bg.jpg";
 
 const services = [
   {
@@ -35,8 +36,12 @@ const Servicos = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="pt-32 pb-16 bg-gradient-dark">
-        <div className="container mx-auto px-6">
+      <section className="relative h-[60vh] min-h-[400px] flex items-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={servicesBg} alt="Serviços Arco Contents" className="w-full h-full object-cover" width={1920} height={900} />
+          <div className="absolute inset-0 bg-warm-overlay" />
+        </div>
+        <div className="relative z-10 container mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="text-primary text-sm uppercase tracking-[0.3em] mb-4">O que fazemos</p>
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">Nossos Serviços</h1>
@@ -57,9 +62,8 @@ const Servicos = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                i % 2 === 1 ? "lg:direction-rtl" : ""
-              }`}
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "lg:direction-rtl" : ""
+                }`}
             >
               <div className={i % 2 === 1 ? "lg:order-2" : ""}>
                 <div className="flex items-center gap-4 mb-6">

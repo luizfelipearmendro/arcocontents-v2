@@ -18,7 +18,7 @@ const Contato = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const whatsappText = `Olá! Meu nome é ${form.name}. ${form.message}`;
+    const whatsappText = `Olá, equipe Arco Contents! Me chamo *${form.name}*.\n\n*Mensagem:* ${form.message}\n\n*E-mail:* ${form.email}`;
     window.open(
       `https://api.whatsapp.com/send/?phone=5566996306201&text=${encodeURIComponent(whatsappText)}`,
       "_blank"
