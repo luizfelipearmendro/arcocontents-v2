@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import Section from "@/components/Section";
-import marcosImg from "/images/team/Mídia.jpg";
+import marcosImg from "/images/team/marcos.jpg";
 import lemuelImg from "/images/team/lemuel.jpg";
 import yanImg from "/images/team/yan.jpg";
 import teamBg from "/images/team/team1 - Editado.jpg";
