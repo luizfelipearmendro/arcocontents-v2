@@ -2,13 +2,14 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logoArco from "/images/Logo digital ARCO Contents com flecha.png";
+import logoArco from "/images/marca/Logo digital ARCO Contents com flecha.png";
 
 const navItems = [
   { label: "Home", path: "/" },
   { label: "Sobre", path: "/sobre" },
   { label: "Serviços", path: "/servicos" },
   { label: "Equipe", path: "/equipe" },
+  { label: "Portfólio", path: "/portfolio" },
   { label: "Contato", path: "/contato" },
 ];
 

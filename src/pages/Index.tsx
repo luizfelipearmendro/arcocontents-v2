@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Camera, Film, Smartphone, Share2 } from "lucide-react";
 import Layout from "@/components/Layout";
 import Section from "@/components/Section";
-import heroBg from "@/assets/hero-bg.jpg";
-import marcosImg from "/images/Mídia - Copia.jpg";
+import heroBg from "/images/team/team3 - Editado.png";
+import marcosImg from "/images/team/Mídia - Copia.jpg";
 
 const services = [
   { icon: Film, title: "Storymaker", desc: "Histórias visuais que conectam e engajam seu público." },

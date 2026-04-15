@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import Section from "@/components/Section";
-import aboutBg from "@/assets/about-bg.jpg";
+import aboutBg from "/images/team/team2 - Editado.png";
 import { Target, Eye, Heart } from "lucide-react";
 
 const values = [

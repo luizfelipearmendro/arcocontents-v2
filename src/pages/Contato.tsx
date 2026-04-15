@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 const contactInfo = [
   { icon: Phone, label: "WhatsApp", value: "(66) 99630-6201", href: "https://api.whatsapp.com/send/?phone=5566996306201" },
   { icon: Mail, label: "E-mail", value: "contato@arcocontents.com", href: "mailto:contato@arcocontents.com" },
-  { icon: Instagram, label: "Instagram", value: "@arcocontents", href: "https://instagram.com/arcocontents" },
+  { icon: Instagram, label: "Instagram", value: "@arco_contents", href: "https://instagram.com/arco_contents" },
   { icon: MapPin, label: "Localização", value: "Brasil", href: "#" },
 ];
 
