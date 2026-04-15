@@ -16,6 +16,7 @@ const team = [
     social: {
       instagram: "https://www.instagram.com/marcosvasconcelox/",
     },
+    name_user: "marcosvasconcelox",
   },
   {
     name: "Lemuel Bezerra",
@@ -25,6 +26,7 @@ const team = [
     social: {
       instagram: "https://www.instagram.com/lemuel.bezerra?igsh=MXZxbW93MTVuNGh3bw==",
     },
+    name_user: "lemuel.bezerra",
   },
   {
     name: "Yan Richard",
@@ -34,6 +36,7 @@ const team = [
     social: {
       instagram: "https://www.instagram.com/yanrichard.santos?igsh=MWw0czA4dTEycWpoOQ==",
     },
+    name_user: "yanrichard.santos",
   },
 ];
 
@@ -59,10 +62,10 @@ const Card = ({ member }: any) => (
 
     <div className="flex justify-center gap-4">
       <a href={member.social.instagram} target="_blank" rel="noopener noreferrer">
-        <Instagram size={18} />
+        {member.name_user}
       </a>
-      <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
-        <Linkedin size={18} />
+      <a href={member.social.instagram} target="_blank" rel="noopener noreferrer">
+        <Instagram size={12} />
       </a>
     </div>
   </div>
@@ -123,11 +126,15 @@ const Equipe = () => {
                 {team[0].bio}
               </p>
 
-              <div className="flex gap-4">
-                <a href={team[0].social.instagram} target="_blank">
-                  <Instagram />
+              <div className="flex items-center gap-4">
+                <a href={team[0].social.instagram} target="_blank" rel="noopener noreferrer" className="text-primary text-xs uppercase tracking-wider italic">
+                  @{team[0].name_user}
+                </a>
+                <a href={team[0].social.instagram} target="_blank" rel="noopener noreferrer" className="text-primary">
+                  <Instagram size={16} />
                 </a>
               </div>
+
             </div>
           </motion.div>
 
@@ -163,9 +170,12 @@ const Equipe = () => {
                   <p className="text-muted-foreground mb-5 max-w-md">
                     {member.bio}
                   </p>
-                  <div className="flex gap-4">
-                    <a href={member.social.instagram} target="_blank">
-                      <Instagram size={18} />
+                  <div className="flex items-center gap-4">
+                    <a href={member.social.instagram} target="_blank" rel="noopener noreferrer" className="text-primary text-xs uppercase tracking-wider italic">
+                      @{member.name_user}
+                    </a>
+                    <a href={member.social.instagram} target="_blank" rel="noopener noreferrer" className="text-primary">
+                      <Instagram size={16} />
                     </a>
                   </div>
                 </div>
