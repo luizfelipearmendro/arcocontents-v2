@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import Section from "@/components/Section";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroBg from "/images/team/team2 - Editado.png";
 
 const categories = ["Todos", "Fotos", "Vídeos", "Social"];
 
@@ -56,13 +57,17 @@ const Portfolio = () => {
     return (
         <Layout>
             {/* HERO */}
-            <section className="pt-32 pb-16 bg-gradient-dark">
-                <div className="container mx-auto px-6">
+            <section className="relative h-[60vh] min-h-[400px] flex items-center overflow-hidden">
+                <div className="absolute inset-0">
+                    <img src={heroBg} alt="Equipe Arco Contents" className="w-full h-full object-cover" width={1920} height={900} />
+                    <div className="absolute inset-0 bg-warm-overlay" />
+                </div>
+                <div className="container mx-auto px-6 relative z-10">
                     <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
                         <p className="text-primary text-sm uppercase tracking-[0.3em] mb-4">
                             Portfólio
                         </p>
-                        <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
+                        <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white">
                             Nossos Trabalhos
                         </h1>
                         <p className="text-muted-foreground max-w-xl text-lg">
@@ -80,8 +85,8 @@ const Portfolio = () => {
                             key={cat}
                             onClick={() => setSelectedCategory(cat)}
                             className={`px-5 py-2 rounded-full text-sm font-medium transition ${selectedCategory === cat
-                                    ? "bg-primary text-white"
-                                    : "bg-card text-foreground/70 hover:bg-primary/10"
+                                ? "bg-primary text-white"
+                                : "bg-card text-foreground/70 hover:bg-primary/10"
                                 }`}
                         >
                             {cat}

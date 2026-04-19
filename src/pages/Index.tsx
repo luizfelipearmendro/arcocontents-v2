@@ -22,7 +22,7 @@ const Index = () => {
           <img
             src={heroBg}
             alt="Estúdio criativo Arco Contents"
-            className="w-full h-full object-cover"
+            className="w-full h-full md:h-[1300px] object-cover"
             width={1920}
             height={1080}
           />
