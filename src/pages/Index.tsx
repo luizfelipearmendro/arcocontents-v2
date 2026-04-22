@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Camera, Film, Smartphone, Share2 } from "lucide-react";
 import Layout from "@/components/Layout";
 import Section from "@/components/Section";
-import heroBg from "/images/team/team3 - Editado.png";
+import heroBg from "/images/team/team3.jpg";
 import marcosImg from "/images/team/Mídia - Copia.jpg";
 
 const services = [
@@ -38,9 +38,9 @@ const Index = () => {
             <p className="text-primary font-body text-sm uppercase tracking-[0.3em] mb-6">
               Marketing de Conteúdo
             </p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-8">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-muted-foreground leading-tight mb-8">
               Não existe tamanho para os seus{" "}
-              <span className="text-gradient-gold italic">sonhos</span>
+              <span className="text-primary italic">sonhos</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 font-light">
               Enquanto alguns esperam ser notados, outros escolhem ser{" "}
@@ -49,7 +49,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/servicos"
-                className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity"
+                className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity"
               >
                 Nossos serviços
                 <ArrowRight size={16} />
@@ -116,7 +116,7 @@ const Index = () => {
             </div>
             <div className="text-left">
               <p className="text-sm font-semibold">Marcos Adonai</p>
-              <p className="text-xs text-muted-foreground">CEO & Fundador</p>
+              <p className="text-xs text-muted-foreground">Sócio e Diretor de Marketing</p>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ const Index = () => {
             href="https://api.whatsapp.com/send/?phone=5566996306201"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity"
           >
             Venha conosco
             <ArrowRight size={16} />

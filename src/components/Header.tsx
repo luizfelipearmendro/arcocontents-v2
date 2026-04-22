@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logoArco from "/images/marca/Logo digital ARCO Contents com flecha.png";
+import logoArco from "/images/marca/file-removebg-preview - Copia.png";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -21,7 +21,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logoArco} alt="Arco Contents" className="h-6 w-auto" />
+          <img src={logoArco} alt="Arco Contents" className="h-5 w-auto" />
           <span className="hidden sm:block text-sm font-body text-muted-foreground tracking-widest uppercase">
             Arco Contents
           </span>

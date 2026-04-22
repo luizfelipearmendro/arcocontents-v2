@@ -7,9 +7,9 @@ import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
   { icon: Phone, label: "WhatsApp", value: "(66) 99630-6201", href: "https://api.whatsapp.com/send/?phone=5566996306201" },
-  { icon: Mail, label: "E-mail", value: "contato@arcocontents.com", href: "mailto:contato@arcocontents.com" },
+  { icon: Mail, label: "E-mail", value: "arcocontents@gmail.com", href: "mailto:arcocontents@gmail.com" },
   { icon: Instagram, label: "Instagram", value: "@arco_contents", href: "https://instagram.com/arco_contents" },
-  { icon: MapPin, label: "Localização", value: "Brasil", href: "#" },
+  { icon: MapPin, label: "Localização", value: "Primavera do Leste - MT", href: "#" },
 ];
 
 const Contato = () => {
@@ -32,7 +32,7 @@ const Contato = () => {
       <section className="pt-32 pb-16 bg-gradient-dark">
         <div className="container mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-            <p className="text-primary text-sm uppercase tracking-[0.3em] mb-4">Fale conosco</p>
+            <p className="text-muted-foreground text-sm uppercase tracking-[0.3em] mb-4">Fale conosco</p>
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">Contato</h1>
             <p className="text-muted-foreground max-w-xl text-lg">
               Pronto para dar o próximo passo? Estamos aqui para ajudar.
@@ -87,7 +87,7 @@ const Contato = () => {
             </div>
             <button
               type="submit"
-              className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity w-full justify-center"
+              className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity w-full justify-center"
             >
               Enviar via WhatsApp <Send size={16} />
             </button>

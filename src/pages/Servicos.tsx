@@ -3,32 +3,32 @@ import Layout from "@/components/Layout";
 import Section from "@/components/Section";
 import { Film, Camera, Smartphone, Share2, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import servicesBg from "@/assets/hero-bg.jpg";
+import servicesBg from "/images/marca/ChatGPT Image 26 de jun. de 2025, 14_29_47.png";
 
 const services = [
   {
-    icon: Film,
-    title: "Storymaker",
-    desc: "Criamos narrativas visuais envolventes que capturam a essência da sua marca e conectam emocionalmente com seu público-alvo.",
-    features: ["Roteiro criativo", "Produção de stories", "Narrativa visual", "Conteúdo para redes"],
+    icon: Share2,
+    title: "Social Media",
+    desc: "Gestão completa das suas redes sociais, com estratégia, planejamento e execução para crescer sua presença digital.",
+    features: ["Estratégia de conteúdo", "Calendário editorial", "Análise de métricas", "Gestão mensal"],
   },
   {
     icon: Camera,
     title: "Videomaker",
     desc: "Produção audiovisual profissional, desde vídeos institucionais até conteúdos para redes sociais, sempre com qualidade cinematográfica.",
-    features: ["Vídeos institucionais", "Reels e shorts", "Edição profissional", "Color grading"],
+    features: ["Vídeos institucionais", "Takes com drone", "Roteiro e Direção assertiva"],
   },
   {
     icon: Smartphone,
     title: "Fotógrafo Mobile",
     desc: "Conteúdo autêntico e de alta qualidade produzido diretamente do celular, ideal para quem busca agilidade sem perder a qualidade.",
-    features: ["Fotos para feed", "Conteúdo espontâneo", "Edição mobile", "Banco de imagens"],
+    features: ["Fotos profissionais", "Entrega full", "Edição refinada e Aniversários, casamento e eventos"],
   },
   {
-    icon: Share2,
-    title: "Social Media",
-    desc: "Gestão completa das suas redes sociais, com estratégia, planejamento e execução para crescer sua presença digital.",
-    features: ["Planejamento de conteúdo", "Calendário editorial", "Análise de métricas", "Gestão de comunidade"],
+    icon: Film,
+    title: "Storymaker",
+    desc: "Criamos narrativas visuais envolventes que capturam a essência da sua marca e conectam emocionalmente com seu público-alvo.",
+    features: ["Produção de storys", "Storytelling", "Conteúdo assertivos e Edição real time"],
   },
 ];
 
@@ -43,7 +43,7 @@ const Servicos = () => {
         </div>
         <div className="relative z-10 container mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-            <p className="text-primary text-sm uppercase tracking-[0.3em] mb-4">O que fazemos</p>
+            <p className="text-muted-foreground text-sm uppercase tracking-[0.3em] mb-4">O que fazemos</p>
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">Nossos Serviços</h1>
             <p className="text-muted-foreground max-w-xl text-lg">
               Soluções completas em marketing de conteúdo para transformar sua marca.
@@ -101,7 +101,7 @@ const Servicos = () => {
           </p>
           <Link
             to="/contato"
-            className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity"
           >
             Fale conosco <ArrowRight size={16} />
           </Link>
