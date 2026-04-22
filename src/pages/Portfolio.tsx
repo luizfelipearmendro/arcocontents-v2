@@ -40,7 +40,7 @@ const projects = [
         category: "Vídeos",
         type: "video",
         src: "/images/portfolio/videos/Aniversário Infantil/Aniversário infantil.mp4",
-        thumb: "/images/portfolio/fotos/Aniversário Infantil/Aniversário infantil.jpg",
+        thumb: "/images/portfolio/fotos/Aniversário Infantil/Aniversário infantil.png",
     },
     {
         id: 5,

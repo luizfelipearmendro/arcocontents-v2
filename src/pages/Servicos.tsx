@@ -16,19 +16,19 @@ const services = [
     icon: Camera,
     title: "Videomaker",
     desc: "Produção audiovisual profissional, desde vídeos institucionais até conteúdos para redes sociais, sempre com qualidade cinematográfica.",
-    features: ["Vídeos institucionais", "Takes com drone", "Roteiro e Direção assertiva"],
+    features: ["Vídeos institucionais", "Takes com drone", "Roteiro", "Direção assertiva"],
   },
   {
     icon: Smartphone,
     title: "Fotógrafo Mobile",
     desc: "Conteúdo autêntico e de alta qualidade produzido diretamente do celular, ideal para quem busca agilidade sem perder a qualidade.",
-    features: ["Fotos profissionais", "Entrega full", "Edição refinada e Aniversários, casamento e eventos"],
+    features: ["Fotos profissionais", "Entrega full", "Edição refinada", "Aniversários, casamento e eventos"],
   },
   {
     icon: Film,
     title: "Storymaker",
     desc: "Criamos narrativas visuais envolventes que capturam a essência da sua marca e conectam emocionalmente com seu público-alvo.",
-    features: ["Produção de storys", "Storytelling", "Conteúdo assertivos e Edição real time"],
+    features: ["Produção de storys", "Storytelling", "Conteúdo assertivos", "Edição real time"],
   },
 ];
 
