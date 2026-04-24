@@ -7,10 +7,10 @@ import heroBg from "/images/team/team3.jpg";
 import marcosImg from "/images/team/Mídia - Copia.jpg";
 
 const services = [
-  { icon: Film, title: "Storymaker", desc: "Histórias visuais que conectam e engajam seu público." },
+  { icon: Share2, title: "Social Media", desc: "Gestão estratégica das suas redes sociais." },
   { icon: Camera, title: "Videomaker", desc: "Produção audiovisual profissional para sua marca." },
   { icon: Smartphone, title: "Fotógrafo Mobile", desc: "Conteúdo autêntico direto do seu celular." },
-  { icon: Share2, title: "Social Media", desc: "Gestão estratégica das suas redes sociais." },
+  { icon: Film, title: "Storymaker", desc: "Histórias visuais que conectam e engajam seu público." },
 ];
 
 const Index = () => {
