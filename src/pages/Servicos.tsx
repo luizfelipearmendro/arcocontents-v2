@@ -1,31 +1,39 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import Section from "@/components/Section";
-import { Film, Camera, Smartphone, Share2, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import servicesBg from "/images/marca/ChatGPT Image 26 de jun. de 2025, 14_29_47.png";
+import imgSocialMedia from "/images/servicos/social_media.jpeg";
+import imgVideomaker from "/images/servicos/videomaker.jpeg";
+import imgFotografoMobile from "/images/servicos/fotógrafo.jpeg";
+import imgStorymaker from "/images/servicos/storymaker.jpeg";
+import { Film, Camera, Smartphone, Share2, ArrowRight } from "lucide-react";
 
 const services = [
   {
+    img: imgSocialMedia,
     icon: Share2,
     title: "Social Media",
     desc: "Gestão completa das suas redes sociais, com estratégia, planejamento e execução para crescer sua presença digital.",
     features: ["Estratégia de conteúdo", "Calendário editorial", "Análise de métricas", "Gestão mensal"],
   },
   {
-    icon: Camera,
+    img: imgVideomaker,
+    icon: Film,
     title: "Videomaker",
     desc: "Produção audiovisual profissional, desde vídeos institucionais até conteúdos para redes sociais, sempre com qualidade cinematográfica.",
     features: ["Vídeos institucionais", "Takes com drone", "Roteiro", "Direção assertiva"],
   },
   {
-    icon: Smartphone,
+    img: imgFotografoMobile,
+    icon: Camera,
     title: "Fotógrafo Mobile",
     desc: "Conteúdo autêntico e de alta qualidade produzido diretamente do celular, ideal para quem busca agilidade sem perder a qualidade.",
     features: ["Fotos profissionais", "Entrega full", "Edição refinada", "Aniversários, casamento e eventos"],
   },
   {
-    icon: Film,
+    img: imgStorymaker,
+    icon: Smartphone,
     title: "Storymaker",
     desc: "Criamos narrativas visuais envolventes que capturam a essência da sua marca e conectam emocionalmente com seu público-alvo.",
     features: ["Produção de storys", "Storytelling", "Conteúdo assertivos", "Edição real time"],
@@ -68,7 +76,7 @@ const Servicos = () => {
               <div className={i % 2 === 1 ? "lg:order-2" : ""}>
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <service.icon className="text-primary" size={28} />
+                    <service.icon className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-2xl md:text-3xl font-display font-bold">{service.title}</h3>
                 </div>
@@ -83,7 +91,7 @@ const Servicos = () => {
                 </ul>
               </div>
               <div className={`bg-card rounded-2xl border border-border aspect-video flex items-center justify-center ${i % 2 === 1 ? "lg:order-1" : ""}`}>
-                <service.icon className="text-primary/20" size={80} />
+                <img src={service.img} alt={service.title} className="w-full h-full object-cover rounded-2xl" />
               </div>
             </motion.div>
           ))}

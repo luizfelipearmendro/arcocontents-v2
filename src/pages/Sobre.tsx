@@ -43,7 +43,7 @@ const Sobre = () => {
                 público de forma autêntica e impactante.
               </p>
               <p>
-                Se sua empresa precisa de produção de conteúdo assertivo, a A.C. é a agência certa
+                Se sua empresa precisa de produção de conteúdo assertivo, a AC é a agência certa
                 para contratar. Combinamos criatividade, estratégia e tecnologia para entregar
                 resultados que vão além das expectativas.
               </p>

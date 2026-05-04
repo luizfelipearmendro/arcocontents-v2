@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import Section from "@/components/Section";
-import marcosImg from "/images/team/marcos-adonai.jpeg";
-import lemuelImg from "/images/team/lemuel-bezerra.jpeg";
-import yanImg from "/images/team/yan-richard.jpeg";
+import marcosImg from "/images/team/MA.jpeg";
+import lemuelImg from "/images/team/LB.jpeg";
+import yanImg from "/images/team/YR.jpeg";
 import teamBg from "/images/team/team1.jpg";
 import { Instagram, Linkedin } from "lucide-react";
 

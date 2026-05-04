@@ -4,7 +4,6 @@ import { ArrowRight, Camera, Film, Smartphone, Share2 } from "lucide-react";
 import Layout from "@/components/Layout";
 import Section from "@/components/Section";
 import heroBg from "/images/team/team3.jpg";
-import marcosImg from "/images/team/Mídia - Copia.jpg";
 
 const services = [
   { icon: Share2, title: "Social Media", desc: "Gestão estratégica das suas redes sociais." },
@@ -102,21 +101,21 @@ const Index = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="section-divider mx-auto mb-8" />
           <blockquote className="text-xl md:text-2xl font-display italic text-foreground/90 leading-relaxed mb-6">
-            "Por trás de cada obrigado está o motivo pelo qual nunca desisto. Cada história, cada
-            transformação, é o combustível para continuar fazendo a diferença."
+            "Por trás de cada obrigado está o motivo pelo qual nunca desistimos. Cada história, cada
+            transformação, é o combustível para continuarmos fazendo a diferença."
           </blockquote>
           <div className="flex items-center justify-center gap-4">
             <div className="w-12 h-12 rounded-full overflow-hidden">
               <img
-                src={marcosImg}
-                alt="Marcos Adonai"
+                src={heroBg}
+                alt="Time AC"
                 className="w-full h-full object-cover scale-110"
                 loading="lazy"
               />
             </div>
             <div className="text-left">
-              <p className="text-sm font-semibold">Marcos Adonai</p>
-              <p className="text-xs text-muted-foreground">Sócio e Diretor de Marketing</p>
+              <p className="text-sm font-semibold">Arco Contents</p>
+              <p className="text-xs text-muted-foreground">Agência de Marketing de Conteúdo</p>
             </div>
           </div>
         </div>
