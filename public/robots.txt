@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://arcocontents.com.br
+Sitemap: https://arcocontents.com.br/sitemap.xml
